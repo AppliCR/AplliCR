@@ -1,4 +1,4 @@
 <?php
 function afficherFiche() {
-	System.out.println("yipikay");
+	System.out.println("yipikay,mother fucker");
 }
