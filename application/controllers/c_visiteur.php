@@ -1,4 +1,5 @@
 <?php
 function afficherFiche() {
-	System.out.println("test maison");
+	echo("test maison");
+
 }
