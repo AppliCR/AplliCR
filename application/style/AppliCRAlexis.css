@@ -1,0 +1,13 @@
+@CHARSET "ISO-8859-1";
+div.Fond_site {
+	background-color: rgb(40,40,55);
+}
+div.Couleur_titre {
+	color:rgb(63,170,213);
+}
+div.Couleur_soustitre {
+	color:rgb(170,192,206);
+}
+div.Couleur_ecriture {
+	color:rgb(66,44,55);
+}
