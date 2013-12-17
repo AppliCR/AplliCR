@@ -1,0 +1,39 @@
+@CHARSET "ISO-8859-1";
+
+/*quentin*/
+
+/* page v_visiteur*/
+h1.Couleur_titre{
+	color:rgb(63,170,213);
+	text-align:center;
+}
+div.Couleur_gestion{
+	color:rgb(63,170,213);
+	font-size:20px;
+	font-weight : bold;
+}
+div.form_connexion{
+	background-color: rgb(40,40,55);
+	border:1 px solid black;
+	width:800px;
+	height:400px;
+	margin-left:500px;
+	margin-top:80px;
+	color:rgb(63,170,213);
+	font-size:30px;
+	
+}
+div.position_champs{
+	margin-left:120px;
+}
+
+div.Couleur_soustitre{
+	color:rgb(170,192,206);
+}
+label.Couleur_ecriture {
+	color:rgb(66,44,55);
+}
+div.position_boutton{
+	margin-left:520px;
+	margin-top:60px;
+}
