@@ -1,7 +1,9 @@
 @CHARSET "ISO-8859-1";
+/* v_consulter_praticien */
 div.Fond_site {
-	background-color: rgb(40,40,55);
+	background-color:rgb(40,40,55);
 }
+/* v_consulter_praticien */
 div.Couleur_titre {
 	color:rgb(63,170,213);
 }
