@@ -13,3 +13,8 @@ div.Couleur_soustitre {
 div.Couleur_ecriture {
 	color:rgb(66,44,55);
 }
+label.Couleur_fond_blanc {
+	background-color:white;
+	font-size:16px;
+	font-family: Comic Sans MS; 
+}

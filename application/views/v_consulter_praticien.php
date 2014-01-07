@@ -1,7 +1,7 @@
 <?php
 $this->load->helper("html");
 echo doctype('html4-frame'); 
-echo meta('Content-Type', 'text/html; charset=Cp1252');
+echo meta('Content-Type', 'text/html; charset=utf-8');
 echo link_tag('style/AppliCRAlexis.css');
 ?>
 <body>
@@ -11,17 +11,23 @@ echo link_tag('style/AppliCRAlexis.css');
 			<h1>Praticiens</h1>
 		</div>
 		<div class="Couleur_soustitre">
+			<form>
+				<select name="liste_praticien">
+				<?php foreach($nom_praticien as $nom) { ?>
+					<option> <?php echo $nom['PRA_NOM']; ?></option>
+				<?php } ?>
+				</select>
+				<input type="submit" value="OK">
+			</form>
 		<?php foreach ($praticien as $compteur_praticien) { ?>
-			  	<label>NUMERO : </label><?php  echo ($compteur_praticien['PRA_NUM']);?><br/><br/>
-         		<label>NOM : </label><?php echo ($compteur_praticien['PRA_NOM']); ?><br/><br/>
-         		<label>PRENOM : </label><?php echo ($compteur_praticien['PRA_PRENOM']); ?><br/><br/>
-         		<label>ADRESSE : </label><?php echo ($compteur_praticien['PRA_ADRESSE']); ?><br/><br/>
-         		<label>CP : </label><?php echo($compteur_praticien['PRA_CP']); ?><br/><br/>
-         		<label>VILLE : </label><?php echo($compteur_praticien['PRA_VILLE']); ?><br/><br/>
-         		<label>COEFF. NOTORIETE : </label><?php echo($compteur_praticien['PRA_COEFNOTORIETE']); ?><br/><br/> 
-         <?php }
-              foreach ($type_praticien as $compteur_type_praticien) { ?>
-         		<label>TYPE PRATICIEN : </label><?php echo($compteur_type_praticien['TYP_LIBELLE']); ?><br/><br/>
+			  	<label>NUMERO : </label><label class="Couleur_fond_blanc"><?php echo ($compteur_praticien['PRA_NUM']); ?></label><br/><br/>
+         		<label>NOM : </label><label class="Couleur_fond_blanc"><?php echo ($compteur_praticien['PRA_NOM']); ?></label><br/><br/>
+         		<label>PRENOM : </label><label class="Couleur_fond_blanc"><?php echo ($compteur_praticien['PRA_PRENOM']); ?></label><br/><br/>
+         		<label>ADRESSE : </label><label class="Couleur_fond_blanc"><?php echo ($compteur_praticien['PRA_ADRESSE']); ?></label><br/><br/>
+         		<label>CP : </label><label class="Couleur_fond_blanc"><?php echo($compteur_praticien['PRA_CP']); ?></label><br/><br/>
+         		<label>VILLE : </label><label class="Couleur_fond_blanc"><?php echo($compteur_praticien['PRA_VILLE']); ?></label><br/><br/>
+         		<label>COEFF. NOTORIETE : </label><label class="Couleur_fond_blanc"><?php echo($compteur_praticien['PRA_COEFNOTORIETE']); ?></label><br/><br/> 
+         		<label>TYPE : </label><label class="Couleur_fond_blanc"><?php echo($compteur_praticien['TYP_CODE']); ?></label><br/><br/>
          <?php } ?>
 		</div>
 	</div>
